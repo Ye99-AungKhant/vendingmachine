@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
+    "require": {
+        "firebase/php-jwt": "^6.10"
+    }
+}
