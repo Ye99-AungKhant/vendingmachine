@@ -1,5 +1,9 @@
 <?php
 $userRole = checkUserRole('Admin');
+if (!$userRole) {
+    header('Location: login');
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
