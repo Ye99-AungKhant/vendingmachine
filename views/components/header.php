@@ -1,6 +1,7 @@
 <?php
 $userRole = checkUserRole('Admin');
-if (!$userRole) {
+$authUser = $_SESSION['auth_user'] ?? null;
+if (!$authUser) {
     header('Location: login');
     exit;
 }
